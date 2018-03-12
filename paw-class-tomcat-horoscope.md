@@ -27,6 +27,16 @@ Hay un mundo de cosas por explorar con respecto a Tomcat. Las iremos viendo conf
 Tomcat tiene varios componentes. **Catalina** es el principal componente, es el contenedor de Servlets. Implementa las especificaciones de servlet y JavaServer Pages (JSP).
 Para más info les recomiendo este [post](https://www.mulesoft.com/tcat/tomcat-catalina).
 
+Manejo de versiones de Java
+---------------------------
+
+En caso de que tengan problemas con las versiones de Java y deban instalar otra versión y/o mantener varias versiones en su máquina, pueden hacer uso de la herramienta [jenv](http://www.jenv.be/). Esta herramienta tengo entendido que funciona en cualquier sistema unix, si no les funciona por algún motivo, o si usan Windows, pueden probar [esta otra herramienta](http://www.jenv.io/#), que funciona de forma muy similar.
+
+Les recomiendo leer el siguiente [post](http://davidcai.github.io/blog/posts/install-multiple-jdk-on-mac/), que tiene un ejemplo de un típico caso de uso, el mismo que seguramente necesiten. Quizás no con las mismas versiones exactas de Java pero igualmente les va a servir. Tanto en mac como en linux debería funcionar de la misma forma, salvo la modo de instalar la herramienta.
+
+Si les interesa, pueden ver el [repo de Giuthub](https://github.com/gcuisinier/jenv) que tiene instrucciones más detalladas y alguno ejemplos extras.
+
+
 Archivos de logs
 ---------------
 
