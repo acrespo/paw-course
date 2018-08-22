@@ -2,7 +2,10 @@ package ar.edu.itba.paw.interfaces;
 
 import ar.edu.itba.paw.models.User;
 
+import java.util.List;
+
 public interface UserService {
 
-	public User findById(String id);
+	User findById(String id);
+	List<User> list();
 }
