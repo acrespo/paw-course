@@ -31,6 +31,16 @@ Hay un mundo de cosas por explorar con respecto a Tomcat. Las iremos viendo conf
 Tomcat tiene varios componentes. **Catalina** es el principal componente, es el contenedor de Servlets. Implementa las especificaciones de servlet y JavaServer Pages (JSP).
 Para más info les recomiendo este [post](https://www.mulesoft.com/tcat/tomcat-catalina).
 
+Versiones
+======
+---------------------------
+
+Mi recomendación es que se bajen la version **7.0.76**, ya que **es la versión del servidor donde realizar las entregas de sus Trabajos Prácticos**. Esta versión es compatible con Java 6, 7 y 8. Si tienen alguna de esas versiones de Java instaladas, no van a tener ningún problema. Si tienen instalado Java 9 o superior, pueden instalar alguna de las versiones anteriores y mantener ambas versiones conviviendo en la máquina. Solo asegurense de setear correctamente la variable de entorno **$JAVA_HOME** y/o **JRE_HOME** acordemente según la versión que quieran usar en cada momento.
+
+¿Pueden usar otras versiones de Tomcat para probar localmente? SI.
+
+¿Por qué recomendamos usar esa versión vieja, cuando Tomcat ya va por la versión 9? Porque justamente, muchas cosas cambiaron y podrían tener el problema de tener su aplicación funcionando OK en un Tomcat con una versión nueva en sus máquinas pero al hacer el deploy en el servidor de la entrega, no anda (nos suele pasar).
+
 
 Manejo de versiones de Java
 ======
