@@ -1,26 +1,3 @@
-Port scanning
-======
----------------------------
-
-
-Para ver que puertos tienen abiertos en su localhost pueden usar el comando `nmap`
-
-`nmap localhost`
-
-En las últimas versiones de mac no viene instalado por default, lo pueden instalar con homebrew:
-
-`brew install nmap`
-
-O bajar el dmg desde el [sitio oficial de nmap.](https://nmap.org/)
-
-Nota: en Windows en teoría deberían poder utilizar el mismo comando. En distros de Linux también lo pueden usar, hasta donde sé, viene instalado por default en casi todas. Pero sino, en Linux tmb pueden usar el comando netstat que es mucho más amistoso que el de mac OS X:
-
-`netstat`
-o
-`netstat -ntl`
-
-Pueden jugar un poco con los flags de `netstat`, en Linux es una herramienta muy útil. Ya la utilizarán a diestra y siniestra en Protocolos de Comunicación.
-
 Tomcat
 ======
 ---------------------------
@@ -30,6 +7,23 @@ Hay un mundo de cosas por explorar con respecto a Tomcat. Las iremos viendo conf
 
 Tomcat tiene varios componentes. **Catalina** es el principal componente, es el contenedor de Servlets. Implementa las especificaciones de servlet y JavaServer Pages (JSP).
 Para más info les recomiendo este [post](https://www.mulesoft.com/tcat/tomcat-catalina).
+
+
+
+Archivos de logs
+======
+---------------------------
+
+* Catalina.out: es el log donde se imprimen la sálida standard y la sálida de error del servidor (System.out y System.err). Van a ver que todo lo que se imprima en los archivos catalina.* lo vana ver también acá.
+
+* catalina.*: es el log de catalina, el contenedor de servlets. Acá van a tener información acerca de los deploys que vayan realizando y el estado de ellos. Si tienen problemas con el deploy es un buen lugar para investigar. 
+ 
+* localhost\_access\_log:  es el log donde se registran los accesos al servidor Tomcat. Como vimos en clase, el formato de log no contiene mucha información más alla de data båsica acerca de los requests http recibidos. Es un formato bastante estándar.
+ 
+* localhost.*: es el log del host, aca van a ver errores de aplicación, por ejemplo errores en los jsp aparecen acá.
+ 
+* host-manager.* y manager.*: son los logs de aplicaciones (en este caso de la aplicacion host-manager y la aplicación manager). 
+
 
 Versiones
 ======
@@ -56,22 +50,28 @@ Les recomiendo leer el siguiente [post](http://davidcai.github.io/blog/posts/ins
 Si les interesa, pueden ver el [repo de Giuthub](https://github.com/gcuisinier/jenv) que tiene instrucciones más detalladas y alguno ejemplos extras.
 
 
-
-
-Archivos de logs
+Port scanning
 ======
 ---------------------------
 
-* Catalina.out: es el log donde se imprimen la sálida standard y la sálida de error del servidor (System.out y System.err). Van a ver que todo lo que se imprima en los archivos catalina.* lo vana ver también acá.
 
-* catalina.*: es el log de catalina, el contenedor de servlets. Acá van a tener información acerca de los deploys que vayan realizando y el estado de ellos. Si tienen problemas con el deploy es un buen lugar para investigar. 
- 
-* localhost\_access\_log:  es el log donde se registran los accesos al servidor Tomcat. Como vimos en clase, el formato de log no contiene mucha información más alla de data båsica acerca de los requests http recibidos. Es un formato bastante estándar.
- 
-* localhost.*: es el log del host, aca van a ver errores de aplicación, por ejemplo errores en los jsp aparecen acá.
- 
-* host-manager.* y manager.*: son los logs de aplicaciones (en este caso de la aplicacion host-manager y la aplicación manager). 
+Para ver que puertos tienen abiertos en su localhost pueden usar el comando `nmap`
 
+`nmap localhost`
+
+En las últimas versiones de mac no viene instalado por default, lo pueden instalar con homebrew:
+
+`brew install nmap`
+
+O bajar el dmg desde el [sitio oficial de nmap.](https://nmap.org/)
+
+Nota: en Windows en teoría deberían poder utilizar el mismo comando. En distros de Linux también lo pueden usar, hasta donde sé, viene instalado por default en casi todas. Pero sino, en Linux tmb pueden usar el comando netstat que es mucho más amistoso que el de mac OS X:
+
+`netstat`
+o
+`netstat -ntl`
+
+Pueden jugar un poco con los flags de `netstat`, en Linux es una herramienta muy útil. Ya la utilizarán a diestra y siniestra en Protocolos de Comunicación.
 
 
 Horoscope Project
@@ -86,6 +86,7 @@ Les recomiendo importar el proyecto a su IDE preferido. Recordar importarlo como
 Como vimos, bajo la carpeta `src/main/java` vamos a encontrar el código Java.
 
 El archivo `web.xml` es interesante porque contiene varias configuraciones de nuestra webapp. Por ejemplo, acá es donde están los mapeos de urls a servlets, es decir, que servlet atiende los pedidos de determinada url.
+
 
 Maven
 ======
