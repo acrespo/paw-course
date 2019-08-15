@@ -1,5 +1,7 @@
 Port scanning
-=============
+======
+---------------------------
+
 
 Para ver que puertos tienen abiertos en su localhost pueden usar el comando `nmap`
 
@@ -21,13 +23,17 @@ Pueden jugar un poco con los flags de `netstat`, en Linux es una herramienta muy
 
 Tomcat
 ======
+---------------------------
+
 
 Hay un mundo de cosas por explorar con respecto a Tomcat. Las iremos viendo conforme sean necesarias. Siempre pueden investigar por sus propios medios pero lo que nos importa que tengan bien en claro es lo siguiente:
 
 Tomcat tiene varios componentes. **Catalina** es el principal componente, es el contenedor de Servlets. Implementa las especificaciones de servlet y JavaServer Pages (JSP).
 Para más info les recomiendo este [post](https://www.mulesoft.com/tcat/tomcat-catalina).
 
+
 Manejo de versiones de Java
+======
 ---------------------------
 
 
@@ -40,8 +46,11 @@ Les recomiendo leer el siguiente [post](http://davidcai.github.io/blog/posts/ins
 Si les interesa, pueden ver el [repo de Giuthub](https://github.com/gcuisinier/jenv) que tiene instrucciones más detalladas y alguno ejemplos extras.
 
 
+
+
 Archivos de logs
----------------
+======
+---------------------------
 
 * Catalina.out: es el log donde se imprimen la sálida standard y la sálida de error del servidor (System.out y System.err). Van a ver que todo lo que se imprima en los archivos catalina.* lo vana ver también acá.
 
@@ -56,7 +65,9 @@ Archivos de logs
 
 
 Horoscope Project
-=================
+======
+---------------------------
+
 
 Con respecto al proyecto Horoscope. Quería dejarles un par de comentarios de cosas que vimos medio por arriba.
 
@@ -67,7 +78,9 @@ Como vimos, bajo la carpeta `src/main/java` vamos a encontrar el código Java.
 El archivo `web.xml` es interesante porque contiene varias configuraciones de nuestra webapp. Por ejemplo, acá es donde están los mapeos de urls a servlets, es decir, que servlet atiende los pedidos de determinada url.
 
 Maven
------
+======
+---------------------------
+
 
 Dado que es un proyecto `maven`, para buildear/compilar vamos a usar dicha herramienta. 
 
