@@ -30,9 +30,12 @@ Para más info les recomiendo este [post](https://www.mulesoft.com/tcat/tomcat-c
 Manejo de versiones de Java
 ---------------------------
 
-En caso de que tengan problemas con las versiones de Java y deban instalar otra versión y/o mantener varias versiones en su máquina, pueden hacer uso de la herramienta [jenv](http://www.jenv.be/). Esta herramienta tengo entendido que funciona en cualquier sistema unix, si no les funciona por algún motivo, o si usan Windows, pueden probar [esta otra herramienta](http://www.jenv.io/#), que funciona de forma muy similar.
 
-Les recomiendo leer el siguiente [post](http://davidcai.github.io/blog/posts/install-multiple-jdk-on-mac/), que tiene un ejemplo de un típico caso de uso, el mismo que seguramente necesiten. Quizás no con las mismas versiones exactas de Java pero igualmente les va a servir. Tanto en mac como en linux debería funcionar de la misma forma, salvo la modo de instalar la herramienta.
+En caso de que tengan problemas con las versiones de Java y deban instalar otra versión y/o mantener varias versiones en su máquina, pueden hacer uso de la herramienta [jenv](http://www.jenv.be/). Esta herramienta tengo funciona en cualquier sistema unix, si no les funciona por algún motivo, o si usan Windows, pueden probar [esta otra herramienta](http://www.jenv.io/#), que funciona de forma muy similar.
+
+Van a encontrar que las guías de instalación y uso de jEnv suelen necesitar **conocer la carpeta de la instalación de Java**. Si no saben cual es esta carpeta en su sistema operativo les ahorro la búsqueda en Google, dirigiendolos a [esta respuesta de SO si usan un sistema operativo unix](https://stackoverflow.com/a/23427862/901465) o [esta otra respuesta si usan OSX](https://stackoverflow.com/a/18144853/901465).
+
+Les recomiendo leer el siguiente [post](http://davidcai.github.io/blog/posts/install-multiple-jdk-on-mac/), que tiene un ejemplo de un típico caso de uso, el mismo que seguramente necesiten. Quizás no con las mismas versiones exactas de Java pero igualmente les va a servir. Tanto en mac como en linux debería funcionar de la misma forma, salvo la forma de instalar la herramienta.
 
 Si les interesa, pueden ver el [repo de Giuthub](https://github.com/gcuisinier/jenv) que tiene instrucciones más detalladas y alguno ejemplos extras.
 
