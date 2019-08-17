@@ -1,8 +1,8 @@
 Buenas!
 
-Como les habrá comentado Juan, ya tienen disponible un host interno en un server de pampero para hacer el **deploy productivo** de sus aplicaciones.
+Ya tienen disponible un host interno en un server de pampero para hacer el **deploy productivo** de sus aplicaciones.
 
-Como les decía, tienen a su disposición el host interno **10.16.1.110**, accesible desde el lab y desde `pampero`. Allí podrán publicar los **.war** via **sftp**. Además tiene una base **postgres** con la cual pueden trabajar.
+Como les decía, tienen a su disposición el host interno **10.16.1.110**, accesible desde el lab y desde `pampero`. Allí podrán publicar los **.war** via **sftp**. Además tiene una base de datos **postgres** con la cual pueden trabajar.
 
 ### Deploy
 
@@ -22,9 +22,9 @@ Una vez hecho esto, deberían poder ver lo que subieron en `http://pawserver.it.
 
 Para conectarse a **postgres** pueden usar las mismas credenciales que usaron para conectarse por **sftp**. Tendrán una db con el nombre de su grupo (que coincide con el nombre de usuario).
 
-Pueden conectarse “a mano” a la postgres usando **psql**, siempre desde el lab o desde pampero. Ejemplo:
+Pueden conectarse directamente a la DB usando **psql**, siempre desde el lab o desde pampero. Ejemplo:
 
-`psql -h 10.16.1.110 -U grupo1`
+`psql -h 10.16.1.110 -U paw-$YEAR$cuatri-$i`
 
-y a continuación se les pedirá la contraseña del usuario `grupo1` (de nuevo, es la misma que para **sftp**).
+y a continuación se les pedirá la contraseña (de nuevo, es la misma que para **sftp**). El nombre de usuario sigue la misma convención usada para la URL, explicada anteriormente.
 
