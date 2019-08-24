@@ -22,7 +22,7 @@ Aquí les dejo algunos links con guías útiles al respecto:
 - [Tomcat (latest available) en OSX](https://github.com/mhulse/mhulse.github.io/wiki/Installing-Apache-Tomcat-using-Homebrew-on-OS-X-Yosemite )
 
 
-Sin usan Windows, o las guías previas no les sirven por el motivo que sea, siempre pueden descargarse la versión standalone del [sitio de Apache](https://archive.apache.org/dist/tomcat/).
+Si usan Windows, o las guías previas no les sirven por el motivo que sea, siempre pueden descargarse la versión standalone del [sitio de Apache](https://archive.apache.org/dist/tomcat/).
 
 En este último caso, los programas o scripts para interactuar con el servidor los encontrarán en la carpeta `bin` de la instalación. Los que normalmente usaremos son `bin/startup.sh` y `shutdown.sh` (si están en un sistema Unix, si están en Windows pueden usar las versiones `.bat` de los mismos).
 
