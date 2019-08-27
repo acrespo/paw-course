@@ -6,19 +6,19 @@ A veces queremos tener composicion de clases, sin necesidad de asignarle ENTIDAD
 
 Para esto anotamos con `@Embeddable` a la clase Point y luego en el objeto que la contenga (por ejemplo Board, Game, Building, Player, etc...) anotamos la referencia con un `@Embedded`. 
 
-- http://blogs.sourceallies.com/2010/01/hibernate-embeddable-objects/
+- [http://blogs.sourceallies.com/2010/01/hibernate-embeddable-objects/]()
 
 ## Many to many 
 
 Al trabajar con many-to-many 
 
-- https://www.mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/
-- http://www.mkyong.com/hibernate/hibernate-many-to-many-example-join-table-extra-column-annotation/
-- http://stackoverflow.com/questions/5127129/mapping-many-to-many-association-table-with-extra-columns
-- http://www.codejava.net/frameworks/hibernate/hibernate-many-to-many-association-with-extra-columns-in-join-table-example
-- https://hellokoding.com/jpa-many-to-many-extra-columns-relationship-mapping-example-with-spring-boot-maven-and-mysql/
+- [https://www.mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/]()
+- [http://www.mkyong.com/hibernate/hibernate-many-to-many-example-join-table-extra-column-annotation/]()
+- [http://stackoverflow.com/questions/5127129/mapping-many-to-many-association-table-with-extra-columns]()
+- [http://www.codejava.net/frameworks/hibernate/hibernate-many-to-many-association-with-extra-columns-in-join-table-example]()
+- [https://hellokoding.com/jpa-many-to-many-extra-columns-relationship-mapping-example-with-spring-boot-maven-and-mysql/]()
 
 Alternative way:
 
-- http://stackoverflow.com/questions/18975312/manytomany-with-additional-columns-using-elementcollection-and-java-util-map
-- https://kptek.wordpress.com/2012/06/26/collection-mapping/
+- [http://stackoverflow.com/questions/18975312/manytomany-with-additional-columns-using-elementcollection-and-java-util-map]()
+- [https://kptek.wordpress.com/2012/06/26/collection-mapping/]()
